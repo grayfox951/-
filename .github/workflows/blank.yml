@@ -2,12 +2,12 @@ name: Keep Anarchy Server Alive
 
 on:
   schedule:
-    - cron: '*/15 * * * *' # Запускать каждые 15 минут
+    - cron: '*/15 * * * *'
 
 jobs:
   keep-alive:
     runs-on: ubuntu-latest
     steps:
       - name: Wake up Codespaces
-        run: curl --http0.9 http://localhost:25565/ # Или другой порт
+        run: curl --http0.9 http://localhost:25565/
         
