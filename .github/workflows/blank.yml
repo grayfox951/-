@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Wake up Codespaces
-        run: curl http://localhost:25565/ # Или другой порт
+        run: curl --http0.9 http://localhost:25565/ # Или другой порт
         
